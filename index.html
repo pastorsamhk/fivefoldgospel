@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五重福音觀：全備與成聖的信仰實踐 - 伍尚森牧師</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #f8fafc; /* Light Blue Gray */
+            color: #1f2937; /* Dark Gray */
+        }
+        /* Tab Navigation Styling */
+        .tab-btn {
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        .tab-btn.active {
+            border-color: #0d9488; /* Teal 600 */
+            background-color: #f0fdfa; /* Mint Green */
+            color: #0f766e; /* Dark Teal */
+            font-weight: 700;
+        }
+        /* Content Panel Switching */
+        .content-panel {
+            display: none;
+        }
+        .content-panel.active {
+            display: block;
+        }
+        /* Accordion Styles */
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+            background-color: #f9fafb; 
+            padding: 0 1rem; 
+        }
+        .accordion-header.active {
+            background-color: #f0fdfa;
+            color: #0d9488;
+            border-left: 4px solid #0d9488;
+        }
+        .accordion-header.active .icon {
+            transform: rotate(180deg);
+        }
+        /* Infographic Table Styling */
+        .grid-cell {
+            padding: 12px;
+            font-size: 0.9rem;
+            color: #374151;
+            border-right: 1px solid #e5e7eb;
+            border-top: 1px solid #e5e7eb;
+            /* Ensure all cells have a minimum height for better visual alignment */
+            min-height: 80px; 
+            display: flex;
+            align-items: center;
+        }
+        .grid-cell-header {
+            font-weight: bold;
+            padding: 12px;
+            text-align: center;
+            border-right: 1px solid #d1d5db;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8 max-w-6xl">
+        <header class="text-center mb-8">
+            <h1 class="text-3xl sm:text-4xl font-bold text-teal-700">五重福音觀：全備與成聖的信仰實踐</h1>
+            <p class="mt-2 text-lg text-gray-500">課程核心信息與神學比較 | 伍尚森牧師</p>
+        </header>
+
+        <main>
+            <nav class="flex flex-wrap justify-center border-b-2 border-teal-200 mb-8" id="tab-navigation">
+                <button data-tab="lesson0" class="tab-btn active text-gray-700 py-3 px-4 sm:px-6 border-b-4 border-transparent hover:border-teal-400 hover:bg-teal-50">課程總覽與五重福音比較</button>
+                <button data-tab="lesson1" class="tab-btn text-gray-700 py-3 px-4 sm:px-6 border-b-4 border-transparent hover:border-teal-400 hover:bg-teal-50">耶穌是救主：救恩與根基</button>
+                <button data-tab="lesson2" class="tab-btn text-gray-700 py-3 px-4 sm:px-6 border-b-4 border-transparent hover:border-teal-400 hover:bg-teal-50">耶穌是施洗者：能力與火</button>
+            </nav>
+            
+            <div id="content-container">
+                
+                <section id="lesson0" class="content-panel active">
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-teal-100">
+                        <h2 class="text-2xl font-bold text-teal-700 mb-4">核心神學比較：趙氏與傳統五旬宗</h2>
+                        
+                        <div class="bg-teal-50 p-3 border-l-4 border-teal-600 mb-5">
+                            <p class="italic text-teal-800 font-medium">課程根基：馬太福音 7:24-27 (磐石與沙土的比喻)。本課程採納趙鏞基牧師版本，強調全人豐盛。</p>
+                        </div>
+                        
+                        <h3 class="text-xl font-semibold text-teal-600 mb-4">五旬宗傳統 V.S. 趙鏞基牧師版本</h3>
+                        
+                        <div class="grid grid-cols-3 gap-0 border border-gray-300 rounded-lg overflow-hidden">
+                            <div class="grid-cell-header bg-gray-200">比較面向</div>
+                            <div class="grid-cell-header bg-blue-200 text-blue-800">傳統五旬宗五重福音</div>
+                            <div class="grid-cell-header bg-red-200 text-red-800">**趙鏞基牧師的五重福音**</div>
+
+                            <div class="grid-cell font-semibold bg-gray-50 border-r">五項核心</div>
+                            <div class="grid-cell bg-blue-50 border-r text-sm">
+                                <ul>
+                                    <li>1. 救主 (Savior)</li>
+                                    <li>2. 成聖者 (Sanctifier)</li>
+                                    <li>3. 聖靈施洗者 (Spirit Baptizer)</li>
+                                    <li>4. 醫治者 (Healer)</li>
+                                    <li>5. 再來君王 (Coming King)</li>
+                                </ul>
+                            </div>
+                            <div class="grid-cell bg-red-50 text-sm">
+                                <ul>
+                                    <li>1. 救恩 (Salvation)</li>
+                                    <li>2. 聖靈充滿 (Baptism in the Holy Spirit)</li>
+                                    <li>3. 神蹟醫治 (Divine Healing)</li>
+                                    <li>4. **祝福與豐盛 (Prosperity)**</li>
+                                    <li>5. 再來君王 (Second Coming)</li>
+                                </ul>
+                            </div>
+
+                            <div class="grid-cell font-semibold bg-gray-50 border-r">神學重心</div>
+                            <div class="grid-cell bg-blue-50 border-r text-sm">強調「成聖」的獨立地位（兩步或三步成聖），著重聖潔生活的追求。</div>
+                            <div class="grid-cell bg-red-50 text-sm">將「成聖」視為救恩和聖靈充滿的**結果**，著重「三重祝福」(靈、魂、體的豐盛) 的實用性。</div>
+
+                            <div class="grid-cell font-semibold bg-gray-50 border-r border-b-0">成果導向</div>
+                            <div class="grid-cell bg-blue-50 border-r border-b-0 text-sm">著重普世性復興與差傳使命。</div>
+                            <div class="grid-cell bg-red-50 border-b-0 text-sm">同時關注個人生活翻轉，形成韓國教會「信心運動」的主流思潮。</div>
+                        </div>
+
+                        <div class="mt-8 bg-teal-100/50 border-2 border-teal-200 p-4 rounded-lg">
+                            <h3 class="font-bold text-teal-700 mb-2">【課程採用趙氏版本理由：牧養實用性】</h3>
+                            <ul class="list-disc ml-5 text-gray-700 space-y-1 text-sm">
+                                <li>符合「二步成聖」脈絡：得救後，再接聖靈充滿，兩者連結契合。</li>
+                                <li>以「豐盛祝福」回應信徒當下需求：靈、魂、體三方面蒙福的期待。</li>
+                                <li>擁抱「簡明直接」的培育模式：清晰的步驟和應用，易於理解並激發信心行動。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="lesson1" class="content-panel">
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-teal-100">
+                        <h2 class="text-2xl font-bold text-teal-700 mb-4">第一觀：耶穌是救主：救恩的基礎與意義</h2>
+                        
+                        <div class="bg-teal-50 p-3 border-l-4 border-teal-600 mb-5">
+                            <p class="italic text-teal-800 font-medium">核心經文：羅馬書 3:23-24, 約翰福音 3:16</p>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="accordion-item border border-teal-200 rounded-lg">
+                                <button class="accordion-header w-full flex justify-between items-center text-left p-4 bg-gray-50 hover:bg-teal-50 transition font-semibold text-gray-700">
+                                    <span>1. 救恩的核心內涵：罪與赦罪</span>
+                                    <span class="transform transition-transform duration-300 icon">▼</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <div class="text-gray-700 space-y-2 p-4">
+                                        <p><span class="font-bold">罪：</span>不僅是行為錯誤，更是一種離開神的狀態與本性，表現為自我為中心的生活方式。</p>
+                                        <p><span class="font-bold">赦罪：</span>耶穌基督的十字架是罪得赦免的唯一途徑；不靠功德、不靠行善，而是單靠信心接受神白白賜下的恩典。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item border border-teal-200 rounded-lg">
+                                <button class="accordion-header w-full flex justify-between items-center text-left p-4 bg-gray-50 hover:bg-teal-50 transition font-semibold text-gray-700">
+                                    <span>2. 救恩帶來的新身份與旅程</span>
+                                    <span class="transform transition-transform duration-300 icon">▼</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <div class="text-gray-700 space-y-2 p-4">
+                                        <p><span class="font-bold">身份轉化：</span>從被定罪的罪人，轉變為能夠坦然來到父神面前、享受祂慈愛與看顧的兒女。</p>
+                                        <p><span class="font-bold">人生旅程：</span>救恩不止是離開地獄的保險，更是開始一段與神同行、成長與變化的旅程，生命會越來越像基督。</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item border border-teal-200 rounded-lg">
+                                <button class="accordion-header w-full flex justify-between items-center text-left p-4 bg-gray-50 hover:bg-teal-50 transition font-semibold text-gray-700">
+                                    <span>3. 救恩的確據與重生的重要性</span>
+                                    <span class="transform transition-transform duration-300 icon">▼</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <div class="text-gray-700 space-y-2 p-4">
+                                        <p><span class="font-bold">確據來源：</span>救恩的確據不是來自感覺或行為的完美，而是根據對耶穌基督的信心與神話語的應許。</p>
+                                        <p><span class="font-bold">重生的必要：</span>以尼哥底母的故事為例，重生是聖靈在信徒心中動工的超自然變化，是生命的根本翻轉。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="lesson2" class="content-panel">
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-teal-100">
+                        <h2 class="text-2xl font-bold text-teal-700 mb-4">第二、三觀：聖靈充滿與施洗者：能力與火的經歷</h2>
+                        
+                        <div class="bg-teal-50 p-3 border-l-4 border-teal-600 mb-5">
+                            <p class="italic text-teal-800 font-medium">趙鏞基牧師：<span class="font-bold">「得救讓你上天堂，聖靈充滿讓你活得像天國的人。」</span></p>
+                        </div>
+
+                        <h3 class="text-xl font-semibold text-teal-600 mb-4">趙氏聖靈充滿的四大層面</h3>
+                        <div class="grid md:grid-cols-2 gap-4 mb-8">
+                            <div class="p-4 bg-red-50 rounded-lg border-l-4 border-red-500">
+                                <h4 class="font-bold text-red-800">1. 能力的充滿 (權柄與力量)</h4>
+                                <p class="text-gray-600 text-sm mt-1">使徒行傳 1:8 所應許的「得著能力」，使信徒在事奉中成就超過人力所及的事。</p>
+                            </div>
+                            <div class="p-4 bg-orange-50 rounded-lg border-l-4 border-orange-500">
+                                <h4 class="font-bold text-orange-800">2. 屬靈恩賜的釋放</h4>
+                                <p class="text-gray-600 text-sm mt-1">釋放各樣恩賜，特別是說方言與先知講道，教導信徒要渴慕並操練恩賜。</p>
+                            </div>
+                            <div class="p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+                                <h4 class="font-bold text-yellow-800">3. 生活的轉化</h4>
+                                <p class="text-gray-600 text-sm mt-1">具體影響品格塑造、聖潔追求、情緒醫治與家庭關係修復。</p>
+                            </div>
+                            <div class="p-4 bg-lime-50 rounded-lg border-l-4 border-lime-500">
+                                <h4 class="font-bold text-lime-800">4. 敬拜與禱告的火熱</h4>
+                                <p class="text-gray-600 text-sm mt-1">推動禱告山與清晨禱告會，鼓勵使用方言禱告、敬拜與爭戰。</p>
+                            </div>
+                        </div>
+
+                        <h3 class="text-xl font-semibold text-teal-600 mb-4">聖靈施洗的目的：使信徒得能力 (互動手風琴)</h3>
+                        <div class="border border-gray-300 rounded-lg overflow-hidden space-y-px">
+                            <div class="accordion-item">
+                                <button class="accordion-header w-full flex justify-between items-center text-left p-4 bg-gray-50 hover:bg-teal-50 transition font-semibold text-gray-700">
+                                    <span>作見證的能力：勇敢向人傳講福音</span>
+                                    <span class="transform transition-transform duration-300 icon">▼</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <p class="text-gray-700 leading-relaxed p-4">聖靈充滿使信徒得著能力，不再懼怕，能勇敢向人傳講福音。這是使徒行傳 1:8 的首要應許，使教會得著佈道的能力。</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header w-full flex justify-between items-center text-left p-4 bg-gray-50 hover:bg-teal-50 transition font-semibold text-gray-700">
+                                    <span>征戰的能力：在屬靈爭戰中勝過仇敵</span>
+                                    <span class="transform transition-transform duration-300 icon">▼</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <p class="text-gray-700 leading-relaxed p-4">聖靈充滿帶來「屬靈的權柄」，使信徒能勝過仇敵的謊言與壓制。趙牧師：「被聖靈充滿的人，裡面有神的火；那火使人裡面的恐懼燒盡，使心中的信心被喚醒。」</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header w-full flex justify-between items-center text-left p-4 bg-gray-50 hover:bg-teal-50 transition font-semibold text-gray-700">
+                                    <span>愛的能力：能愛不可愛的人、流露饒恕</span>
+                                    <span class="transform transition-transform duration-300 icon">▼</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <p class="text-gray-700 leading-relaxed p-4">聖靈在人際關係上的工作，是流露饒恕與愛，使信徒能愛不可愛的人、原諒傷害自己的人。</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header w-full flex justify-between items-center text-left p-4 bg-gray-50 hover:bg-teal-50 transition font-semibold text-gray-700">
+                                    <span>服事的能力：在教會、家庭、職場中成為祝福的器皿</span>
+                                    <span class="transform transition-transform duration-300 icon">▼</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <p class="text-gray-700 leading-relaxed p-4">趙牧師曾說：「聖靈不是只給傳道人，而是給每一個願意被神使用的人。」聖靈施洗使信徒在教會、家庭、職場中成為祝福的器皿。</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="mt-8 bg-purple-100/50 border-2 border-purple-200 p-4 rounded-lg">
+                            <h3 class="font-bold text-purple-700 mb-2">【實踐與保持：持續被充滿】</h3>
+                            <p class="text-gray-700">聖靈充滿是**持續的**狀態（以弗所書 5:18），而非單次經歷。趙牧師鼓勵**方言禱告**，稱之為「靈魂的呼吸」，並強調信徒若每天早晨在禱告中求聖靈充滿，將不斷經歷更新與能力。</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="text-center mt-12 text-sm text-gray-400">
+            <p>&copy; 2025 五重福音觀課程 | 伍尚森牧師</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const tabs = document.querySelectorAll('.tab-btn');
+            const contentPanels = document.querySelectorAll('.content-panel');
+            const nav = document.getElementById('tab-navigation');
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+            function switchTab(targetTab) {
+                tabs.forEach(t => t.classList.remove('active'));
+                contentPanels.forEach(panel => {
+                    if (panel.id === targetTab) {
+                        panel.classList.add('active');
+                    } else {
+                        panel.classList.remove('active');
+                    }
+                });
+                
+                // Set the active class on the correct button
+                const activeButton = document.querySelector(`[data-tab="${targetTab}"]`);
+                if (activeButton) {
+                    activeButton.classList.add('active');
+                }
+
+                // Close all accordions when switching tabs
+                accordionHeaders.forEach(h => {
+                    h.classList.remove('active');
+                    h.nextElementSibling.style.maxHeight = '0';
+                    h.querySelector('.icon').style.transform = 'rotate(0deg)';
+                });
+            }
+            
+            // Tab Clicking Logic
+            nav.addEventListener('click', (e) => {
+                const button = e.target.closest('.tab-btn');
+                if (button) {
+                    switchTab(button.dataset.tab);
+                }
+            });
+
+            // Accordion Logic
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    const accordionContent = header.nextElementSibling;
+                    const icon = header.querySelector('.icon');
+                    const isOpen = header.classList.contains('active');
+
+                    // Close all others
+                    document.querySelectorAll('.accordion-header').forEach(h => {
+                        const content = h.nextElementSibling;
+                        const otherIcon = h.querySelector('.icon');
+                        if (h !== header) {
+                            h.classList.remove('active');
+                            content.style.maxHeight = '0';
+                            otherIcon.style.transform = 'rotate(0deg)';
+                        }
+                    });
+
+                    if (!isOpen) {
+                        // Open the clicked one
+                        header.classList.add('active');
+                        // Set height dynamically based on content (including padding)
+                        // Use scrollHeight + 32px (for 1rem top/bottom padding p-4) to ensure content visibility
+                        accordionContent.style.maxHeight = accordionContent.scrollHeight + 32 + "px"; 
+                        icon.style.transform = 'rotate(180deg)';
+                    } else {
+                        // Close the clicked one
+                        header.classList.remove('active');
+                        accordionContent.style.maxHeight = '0';
+                        icon.style.transform = 'rotate(0deg)';
+                    }
+                });
+            });
+
+            // Initialize to show Lesson 0 content on load
+            switchTab('lesson0');
+        });
+    </script>
+</body>
+</html>
